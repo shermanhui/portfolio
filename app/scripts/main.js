@@ -1,5 +1,5 @@
 function adjust_body_offset() {
-    $('body').css('padding-top', $('.navbar-inverse').outerHeight(true) + 'px' );
+    $('body').css('padding-top', $('.navbar-inverse').outerHeight(true) + 20 + 'px' );
 }
 
 $(window).resize(adjust_body_offset);
