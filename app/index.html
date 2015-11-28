@@ -7,6 +7,7 @@
     <title>portfolio</title>
 
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -26,16 +27,37 @@
     <!--[if lt IE 10]>
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-
-    <div class="container">
-      <div class="header">
-        <ul class="nav nav-pills pull-right">
-          <li class="active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <h3 class="text-muted">portfolio</h3>
+<!--     <div class="header navbar-inverse">
+      <ul class="nav nav-pills pull-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <h3 class="text-muted">portfolio</h3>
+    </div> -->
+    <nav class="navbar navbar-inverse navbar-fixed-top nav-style">
+      <div class="container">
+        <div class="navbar-header padding-top">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">sherman</a>
+          </div>
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav padding-top">
+              <li><a href="#">about</a></li>
+              <li><a href="#">portfolio</a></li>
+              <li><a href="#">blog</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
       </div>
+    </nav>
+    <div class="container">
+
 
       <div class="jumbotron">
         <h1>'Allo, 'Allo!</h1>
@@ -45,6 +67,7 @@
 
       <div class="row marketing">
         <div class="col-lg-6">
+
           <h4>HTML5 Boilerplate</h4>
           <p>HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.</p>
 
@@ -59,12 +82,20 @@
 
         </div>
       </div>
-
-      <div class="footer">
-        <p>♥ from the Yeoman team</p>
-      </div>
     </div>
-
+    <footer class="footer">
+      <div class="container">
+        <div class="navbar-text pull-right">
+          <a href="https://ca.linkedin.com/in/shermanhui"><i class="fa fa-linkedin fa-2x text-muted"></i></a>
+          <a href="https://instagram.com/shui91"><i class="fa fa-instagram fa-2x text-muted"></i></a>
+          <a href="https://www.facebook.com/sherman.hui"><i class="fa fa-facebook-square fa-2x text-muted"></i></a>
+          <a href="mailto:sherman.sy.hui@gmail.com"><i class="fa fa-envelope-o fa-2x text-muted"></i></a>
+        </div>
+        <div class="navbar-text pull-left">
+          <p class="text-muted">Sherman Hui - Front End Developer</p>
+        </div>
+      </div>
+    </footer>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
