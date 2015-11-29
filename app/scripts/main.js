@@ -1,13 +1,14 @@
-function adjust_body_offset() {
-    $('body').css('padding-top', $('.navbar-inverse').outerHeight(true) + 20 + 'px' );
-}
-
-$(window).resize(adjust_body_offset);
-
-$(document).ready(adjust_body_offset);
-
 $(document).ready(function() {
-    $("[rel='tooltip']").tooltip();
+
+	function adjust_body_offset() {
+
+		$('body').css('padding-top', $('.navbar-inverse').outerHeight(true) + 20 + 'px' );
+
+	}
+
+	$(window).resize(adjust_body_offset);
+
+	$(document).ready(adjust_body_offset);
 
     $('.thumbnail').hover(
         function(){
