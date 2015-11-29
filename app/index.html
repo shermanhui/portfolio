@@ -40,23 +40,40 @@
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav padding-top">
-              <li><a href="#">about</a></li>
-              <li><a href="#">portfolio</a></li>
-              <li><a href="#">resume</a></li>
-              <li><a href="#">contact</a></li>
+              <li><a href="#about" data-url="about">about</a></li>
+              <li><a href="#portfolio" data-url="portfolio">portfolio</a></li>
+              <li><a href="#resume" data-url="resume">resume</a></li>
+              <li><a href="#contact" data-url="contact">contact</a></li>
             </ul>
           </div>
       </div>
 
     </nav>
-    <div class="container">
+    <div class="container portfolio-body">
 
+    </div>
+
+    <footer class="navbar-bottom">
+      <div class="container">
+        <div class="navbar-text pull-right">
+          <a href="https://ca.linkedin.com/in/shermanhui"><i class="fa fa-linkedin fa-2x text-muted"></i></a>
+          <a href="https://instagram.com/shui91"><i class="fa fa-instagram fa-2x text-muted"></i></a>
+          <a href="https://www.facebook.com/sherman.hui"><i class="fa fa-facebook-square fa-2x text-muted"></i></a>
+          <a href="mailto:sherman.sy.hui@gmail.com"><i class="fa fa-envelope-o fa-2x text-muted"></i></a>
+        </div>
+        <div class="navbar-text pull-left">
+          <p class="text-muted">Sherman Hui - Front End Developer</p>
+        </div>
+      </div>
+    </footer>
+
+    <script type="text/template" id="about-template">
       <div class="jumbotron">
         <div class="container">
         <div class="col-md-8">
           <h1>Hello!</h1>
-          <h4 class="lead">I'm Sherman Hui, a Front-End Developer from Vancouver, Canada</h4>
-          <p class="lead">I enjoy learning and creating; especially learning to create. I believe in always becoming the best version of yourself. When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down. </p>
+          <h4 class="lead">Im Sherman Hui, a Front-End Developer from Vancouver, Canada</h4>
+          <p class="lead">I enjoy learning and creating; especially learning to create. I believe in always striving to become the best version of yourself. When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down. </p>
         </div>
         <div class="col-md-4">
           <img class="display-photo" src="http://i.imgur.com/bh6AwL0m.png" alt="sherman">
@@ -104,22 +121,7 @@
           <h3>Calorie Tracker</h3>
         </div>
       </div>
-
-    </div>
-
-    <footer class="navbar-bottom">
-      <div class="container">
-        <div class="navbar-text pull-right">
-          <a href="https://ca.linkedin.com/in/shermanhui"><i class="fa fa-linkedin fa-2x text-muted"></i></a>
-          <a href="https://instagram.com/shui91"><i class="fa fa-instagram fa-2x text-muted"></i></a>
-          <a href="https://www.facebook.com/sherman.hui"><i class="fa fa-facebook-square fa-2x text-muted"></i></a>
-          <a href="mailto:sherman.sy.hui@gmail.com"><i class="fa fa-envelope-o fa-2x text-muted"></i></a>
-        </div>
-        <div class="navbar-text pull-left">
-          <p class="text-muted">Sherman Hui - Front End Developer</p>
-        </div>
-      </div>
-    </footer>
+      </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
@@ -155,6 +157,8 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/views/app-view.js"></script>
+    <script src="scripts/router.js"></script>
     <!-- endbuild -->
   </body>
 </html>
