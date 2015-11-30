@@ -23,11 +23,11 @@ app.Router = Backbone.Router.extend({
 	},
 
 	renderResume: function(){
-		$('.portfolio-body').empty();
+		console.log("hello");
 	},
 
 	renderContact: function(){
-		$('.portfolio-body').empty();
+		contactView.render();
 	}
 
 });

@@ -13,8 +13,9 @@ body {
   padding-bottom: 70px;
 }
 
-#portfolio-item {
-  z-index: 2;
+#about-me,
+#featured-work {
+  margin-bottom: 5%;
 }
 
 .browserupgrade {
@@ -82,6 +83,20 @@ i.fa {
 
 .jumbotron {
   background: none;
+}
+
+.contactbg {
+  margin-bottom: 20%;
+//   background: url(http://i.imgur.com/QlT2mZu.jpg) no-repeat center center fixed;
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+}
+
+
+#really-small {
+  font-size: 0.7em;
 }
 
 // .fa:hover {

@@ -68,7 +68,7 @@
     </footer>
 
     <script type="text/template" id="about-template">
-      <div class="jumbotron">
+      <div class="jumbotron" id="about-me">
         <div class="container">
         <div class="col-md-8">
           <h1>Hello!</h1>
@@ -83,7 +83,7 @@
 
       <h1 class="text-center">My Featured Work</h1>
       <hr class="featured-hr">
-      <div class="row text-center">
+      <div class="row text-center" id="featured-work">
         <div class="col-md-3">
           <div class="thumbnail">
             <div class="caption">
@@ -143,17 +143,41 @@
           </div>
           <div class="clearfix"></div>
           <div class="col-md-4 col-sm-6 portfolio-item">
+            <img class="img-responsive" src="http://i.imgur.com/AByzuAT.png" alt="Clone Image"/>
+            <h3 class="project-title text-center">Frogger Clone</h3>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <img class="img-responsive" src="http://i.imgur.com/eD42DHi.png" alt="Feed Image"/>
+            <h3 class="project-title text-center">Feed Reader (Jasmine Testing)</h3>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <img class="img-responsive" src="http://i.imgur.com/Y1uVVzL.png" alt="Optimization Image"/>
+            <h3 class="project-title text-center">Web Optimization Project</h3>
+          </div>
+          <div class="clearfix"></div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
             <img class="img-responsive" src="http://i.imgur.com/dUTGP2q.png" alt="Tracker Image"/>
-            <h3 class="project-title text-center">Calorie Tracker</h3>
+            <h3 class="project-title text-center">Portfolio Website</h3>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <img class="img-responsive" src="http://i.imgur.com/uVWPgAg.png" alt="Map Image"/>
-            <h3 class="project-title text-center">Pub Crawl App</h3>
+            <img class="img-responsive" src="http://i.imgur.com/dUTGP2q.png" alt="Tracker Image"/>
+            <h3 class="project-title text-center">Online Resume</h3>
           </div>
           <div class="col-md-4 col-sm-6 portfolio-item">
-            <img class="img-responsive" src="http://i.imgur.com/2IF5sX2.png" alt="Asteroids Image"/>
-            <h3 class="project-title text-center">Asteroids Clone</h3>
+            <img class="img-responsive" src="http://i.imgur.com/dUTGP2q.png" alt="Tracker Image"/>
+            <h3 class="project-title text-center">ReactJS Project</h3>
           </div>
+        </div>
+      </script>
+      <script type="text/template" id="contact-template">
+        <div class="col-lg-12 text-center contactbg">
+          <h1>Let's Connect!</h1>
+          <hr>
+          <p class="lead">I'd love to meet over coffee or beer to discuss any business or freelance opportunities!</p>
+          <p class="lead">Currently, I am open for freelance opportunities and searching for a full-time Front End Developer position.</p>
+          <p class="lead">Feel free to <a href="mailto:sherman.sy.hui@gmail.com"><i class="fa fa-envelope-o fa-2x text-muted"></i></a> or contact me via <a href="https://ca.linkedin.com/in/shermanhui"><i class="fa fa-linkedin fa-2x text-muted"></i></a></p>
+          <p class="lead" id="really-small">Pardon my lack of a proper contact form!</p>
+          <img src="http://i.imgur.com/nbpsSgM.gif"/>
         </div>
       </script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
