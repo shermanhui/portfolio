@@ -5,15 +5,8 @@ app.appView = Backbone.View.extend({
 
 	aboutTemplate: template("about-template"),
 
-	events: {
-
-	},
-
-	initialize: function(){
-	},
-
 	render: function(){
-		this.$el.append(this.aboutTemplate());
+		this.$el.html(this.aboutTemplate());
 
 		return this;
 	}
@@ -21,3 +14,17 @@ app.appView = Backbone.View.extend({
 });
 
 var aboutView = new app.appView();
+
+app.portfolioView = Backbone.View.extend({
+	el: '.portfolio-body',
+
+	portfolioTemplate: template("folio-template"),
+
+	render: function(){
+		this.$el.html(this.portfolioTemplate());
+
+		return this;
+	}
+})
+
+var portfolioView = new app.portfolioView();

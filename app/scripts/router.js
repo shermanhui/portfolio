@@ -19,15 +19,15 @@ app.Router = Backbone.Router.extend({
 	},
 
 	renderPortfolio: function(){
-
+		portfolioView.render();
 	},
 
 	renderResume: function(){
-
+		$('.portfolio-body').empty();
 	},
 
 	renderContact: function(){
-
+		$('.portfolio-body').empty();
 	}
 
 });
