@@ -13,13 +13,17 @@ body {
   padding-bottom: 70px;
 }
 
-#resume-photo{
-  overflow: hidden;
+p {
+  font-size: 1.2em;
 }
 
 #about-me,
 #featured-work {
   margin-bottom: 5%;
+}
+
+.black-text {
+  color: black !important;
 }
 
 .browserupgrade {
