@@ -23,7 +23,7 @@ app.Router = Backbone.Router.extend({
 	},
 
 	renderResume: function(){
-		console.log("hello");
+		resumeView.render();
 	},
 
 	renderContact: function(){
@@ -32,5 +32,5 @@ app.Router = Backbone.Router.extend({
 
 });
 
-new app.Router();
+var router = new app.Router();
 Backbone.history.start();

@@ -26,6 +26,15 @@ $(document).ready(function() {
     );
 });
 
+$(function() {
+  $('.chart').easyPieChart({
+    barColor: '#3498db',
+    size: '150',
+    lineWidth: '2',
+    easing: 'easeOutBounce',
+  });
+});
+
 /*
  * @desc Helper function that retrieves templates
  * @param string - the id of the template

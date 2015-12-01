@@ -13,6 +13,10 @@ body {
   padding-bottom: 70px;
 }
 
+#resume-photo{
+  overflow: hidden;
+}
+
 #about-me,
 #featured-work {
   margin-bottom: 5%;
@@ -97,6 +101,13 @@ i.fa {
 
 #really-small {
   font-size: 0.7em;
+}
+
+.spacer {
+  background-color: #3498db;
+  width: 20%;
+  height: 2px;
+  margin: auto;
 }
 
 // .fa:hover {

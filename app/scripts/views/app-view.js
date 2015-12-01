@@ -41,7 +41,20 @@ var portfolioView = new app.portfolioView();
 app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	// resumeTemplate: template("resume-template"),
+	initialize: function(){
+		this.renderCharts();
+	},
+
+	renderCharts: function(){
+		$('.chart').easyPieChart({
+			barColor: '#3498db',
+			size: '150',
+			lineWidth: '2',
+			easing: 'easeOutBounce',
+		});
+	},
+
+	resumeTemplate: template("resume-template"),
 
 	render: function(){
 		this.$el.html(this.resumeTemplate());
