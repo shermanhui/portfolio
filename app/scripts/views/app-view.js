@@ -5,14 +5,20 @@ app.appView = Backbone.View.extend({
 
 	aboutTemplate: template("about-template"),
 
-	// events: {
-	// 	'mouseover .thumbnail' : "onHover"
-	// },
+	events: {
+		'mouseover .thumbnail' : "onHover",
+		'mouseout .thumbnail'  : "onLeave"
+	},
 
-	// onHover: function(){
-	// 	$(this).find('.caption').fadeIn(250); //slideDown(250)
-	// 	$(this).find('.caption').fadeOut(250); //.slideDown(205)
-	// },
+	onHover: function(e){
+		var relTarg = e.currentTarget || e.fromElement;
+		$(relTarg).find('.caption').fadeIn(250); //slideDown(250)
+	},
+
+	onLeave: function(e){
+		var relTarg = e.relatedTarget || e.toElement;
+		$(relTarg).find('.caption').fadeOut(250); //.slideDown(205)
+	},
 
 	render: function(){
 		this.$el.html(this.aboutTemplate());
@@ -42,7 +48,6 @@ app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
 
 	initialize: function(){
-		this.renderCharts();
 	},
 
 	renderCharts: function(){
@@ -58,6 +63,7 @@ app.resumeView = Backbone.View.extend({
 
 	render: function(){
 		this.$el.html(this.resumeTemplate());
+		this.renderCharts();
 
 		return this;
 	}
