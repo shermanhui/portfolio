@@ -5,7 +5,8 @@
     "bootstrap-sass": "~3.3.5",
     "modernizr": "~2.8.1",
     "font-awesome": "fontawesome#~4.5.0",
-    "backbone": "~1.2.3"
+    "backbone": "~1.2.3",
+    "jquery.easy-pie-chart": "~2.1.6"
   },
   "overrides": {
     "bootstrap-sass": {
