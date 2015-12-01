@@ -129,7 +129,10 @@ i.fa {
 }
 
 @media screen and (max-width: 768px){
-  .display-photo#dp-set {
+  .resume-photo {
+    &#dp-set: display: none;
+  }
+  .display-photo {
     display: none;
   }
 }
