@@ -3,6 +3,8 @@
 		"name": "Sherman Hui",
 		"picture" : "http://i.imgur.com/bh6AwL0m.png",
 		"role": "Front End Developer",
+		"intro": "I enjoy learning and creating; especially learning to create. I believe in always striving to become the best version of yourself.
+				When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down.",
 		"description": ["p", "p2", "p3"],
 		"technical-skills": [{
 			"name": "HTML5",
@@ -122,6 +124,46 @@
 		},
 		{
 			"title" : "Asteroids Clone",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
+				}
+			]
+		},
+		{
+			"title" : "Frogger Clone",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
+				}
+			]
+		},
+		{
+			"title" : "Feedreader Testing (Jasmine)",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
+				}
+			]
+		},
+		{
+			"title" : "Website Optimization",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
+				}
+			]
+		},
+		{
+			"title" : "Online Resume",
 			"dates" : " ",
 			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
 			"images" : [

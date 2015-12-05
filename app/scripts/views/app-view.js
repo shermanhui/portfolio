@@ -5,6 +5,8 @@
 
 var app = app || {};
 
+app.myDetails = Backbone.Model.extend({});
+
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
 
