@@ -5,7 +5,49 @@
 
 var app = app || {};
 
-app.myDetails = Backbone.Model.extend({});
+app.myDetails = Backbone.Model.extend({
+	urlRoot: "scripts/profile.json",
+
+	initialize: function(attrs){
+		console.log("model init");
+
+	},
+
+	validate: function(attrs){
+		if (!attrs){
+			return "Missing Data!";
+		}
+	},
+
+	parse: function(response){
+		console.log("lol");
+	}
+});
+
+
+app.detailsCollection = Backbone.Collection.extend({
+	model: app.myDetails,
+
+	initialize: function(){
+		console.log("collection init");
+	},
+
+	parse: function(response){
+		return response
+	}
+});
+
+var sherman = new app.detailsCollection();
+console.log(sherman);
+// sherman.fetch({
+// 	url: "scripts/profile.json",
+// 	success: function(){
+// 		console.log(sherman);
+// 	},
+// 	error: function(){
+// 		console.log("error");
+// 	}
+// });
 
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',

@@ -4,7 +4,7 @@
 		"picture" : "http://i.imgur.com/bh6AwL0m.png",
 		"role": "Front End Developer",
 		"intro": "I enjoy learning and creating; especially learning to create. I believe in always striving to become the best version of yourself.
-				When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down.",
+		 		When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down.",
 		"description": ["p", "p2", "p3"],
 		"technical-skills": [{
 			"name": "HTML5",
