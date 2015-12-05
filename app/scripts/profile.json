@@ -1,0 +1,134 @@
+{
+	"basics": {
+		"name": "Sherman Hui",
+		"picture" : "http://i.imgur.com/bh6AwL0m.png",
+		"role": "Front End Developer",
+		"description": ["p", "p2", "p3"],
+		"technical-skills": [{
+			"name": "HTML5",
+			"proficiency": "85"
+			},
+			{
+			"name": "CSS3",
+			"proficiency": "80"
+			},
+			{
+			"name": "JavaScript",
+			"proficiency": "85"
+			},
+			{
+			"name": "OOJS",
+			"proficiency": "85"
+			},
+			{
+			"name": "jQuery",
+			"proficiency": "85"
+			},
+			{
+			"name": "Backbone",
+			"proficiency": "85"
+			},
+			{
+			"name": "ReactJS",
+			"proficiency": "85"
+			},
+			{
+			"name": "KnockoutJS",
+			"proficiency": "85"
+			}
+			],
+		"contacts": {
+			"mobile" : "604-442-7825",
+			"email" : "sherman.sy.hui@gmail.com",
+			"github" : "github.com/shui91",
+			"location" : "Vancouver, BC"
+			}
+	},
+	"education": {
+		"schools": [
+		{
+			"name" : "University of British Columbia",
+			"location" : "2329 West Mall, Vancouver, BC V6T 1Z4",
+			"degree" : "Bachelor of Arts",
+			"major" : "Economics",
+			"dates" : "2009 - 2014",
+			"description" : "As a student at UBC some of his best learning experiences came from his active involvment many extracurricular activities. He was the 2013 Community Deparment head of the largest social club on campus, the Chinese Varsity Club. Spear heading community initiatives such as blood drives, community driven campus-wide games, and other small scale volunteer events, taught him how to delegate and plan large events. Sherman was also CVC's executive of the year in 2014. He was also involved as an amabassador to first-year UBC students as a Orientations Leader, responsible for being their first point of contact on campus and working with a selected professor to organize their first lecture."
+			}
+		],
+		"onlineCourses": [
+		{
+			"title" : "Introduction to Python (Part I)",
+			"school" : "Rice University",
+			"dates" : "April 2015 ",
+			"url" : "https://www.coursera.org/account/accomplishments/verify/762MAG5HLH"
+		},
+		{
+			"title" : "Introduction to Python (Part II)",
+			"school" : "Rice University",
+			"dates" : "May 2015",
+			"url" : "https://www.coursera.org/account/accomplishments/verify/XXR7CGJCSC"
+		},
+		{
+			"title" : "Front End Developer Nanodegree",
+			"school" : "Udacity",
+			"dates" : "May 2015",
+			"url" : "#"
+		}
+		]
+	},
+	"jobs": [
+		{
+			"employer" : "TD Canada Trust",
+			"title" : "Financial Service Representative",
+			"location" : "8100 No.2 Road Unit 145, Richmond, BC",
+			"dates" : "September 2014 to present",
+			"description" : "As the first point of contact for clients at one of Canada's five big banks, my responsibilities included delivering legendary service and personalized financial advice."
+		},
+		{
+			"employer" : "University of British Columbia",
+			"title" : "Communications Assistant",
+			"location" : "Buchanan Bldg, The University of British Columbia Vancouver, BC V6T 1Z1",
+			"dates" : "April 2013 to September 2014",
+			"description" : "As a communications assistant, Sherman was responsible for managing and creating content for the Faculty of Arts websites. Eventually, he took the initiative to learn basic HTML and CSS skills to help the Communications team's web developers with minor web design tasks. The result of Sherman's proactivity contributed to an excellent reception among faculty clients and even resulting in winning a W3 award for the Faculty of Art's websites."
+		},
+		{
+			"employer" : "Centre for Teaching, Learning and Technology",
+			"title" : "Marketing and Communications Assistant",
+			"location" : "214 - 1961 East Mall, Irving K. Barber Learning Centre, Vancouver, BC V6T 1Z1",
+			"dates" : "Jan 2013 to April 2013",
+			"description" : "The Marketing and Communications Assistant position revolved around creating and editing marketing material for the CTLT. Sherman helped create and edit a email newsletter made in Adobe Illustrator, that is regularly sent out to UBC's faculty. He was also responsible for maintaining and managing the CTLT's online blog."
+		}
+	],
+	"projects" : [
+		{
+			"title" : "Calorie Tracker",
+			"dates" : " ",
+			"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/dUTGP2qm.png"
+				}
+			]
+		},
+		{
+			"title" : "Neighbourhood Map",
+			"dates" : " ",
+			"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/uVWPgAgm.png"
+				}
+			]
+		},
+		{
+			"title" : "Asteroids Clone",
+			"dates" : " ",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"images" : [
+				{
+					"image 1" : "http://i.imgur.com/2IF5sX2m.png"
+				}
+			]
+		}
+	]
+}
