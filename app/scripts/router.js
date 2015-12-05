@@ -1,3 +1,8 @@
+/* global Backbone */
+/*eslint no-undef: 0, no-unused-vars: 0*/
+
+'use strict';
+
 var app = app || {};
 
 app.Router = Backbone.Router.extend({
@@ -7,11 +12,11 @@ app.Router = Backbone.Router.extend({
 	},
 
 	routes: {
-		''         : 'renderAbout',
-		'about'    : 'renderAbout',
+		'': 'renderAbout',
+		'about': 'renderAbout',
 		'portfolio': 'renderPortfolio',
-		'resume'   : 'renderResume',
-		'contact'  : 'renderContact'
+		'resume': 'renderResume',
+		'contact': 'renderContact'
 	},
 
 	renderAbout: function(){

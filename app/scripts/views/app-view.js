@@ -1,13 +1,18 @@
+/* global $, Backbone */
+/*eslint no-undef: 0, no-unused-vars: 0*/
+
+'use strict';
+
 var app = app || {};
 
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	aboutTemplate: template("about-template"),
+	aboutTemplate: template('about-template'),
 
 	events: {
-		'mouseover .thumbnail' : "onHover",
-		'mouseout .thumbnail'  : "onLeave"
+		'mouseover .thumbnail': 'onHover',
+		'mouseout .thumbnail': 'onLeave'
 	},
 
 	onHover: function(e){
@@ -33,7 +38,7 @@ var aboutView = new app.appView();
 app.portfolioView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	portfolioTemplate: template("folio-template"),
+	portfolioTemplate: template('folio-template'),
 
 	render: function(){
 		this.$el.html(this.portfolioTemplate());
@@ -55,11 +60,11 @@ app.resumeView = Backbone.View.extend({
 			barColor: '#3498db',
 			size: '150',
 			lineWidth: '2',
-			easing: 'easeOutBounce',
+			easing: 'easeOutBounce'
 		});
 	},
 
-	resumeTemplate: template("resume-template"),
+	resumeTemplate: template('resume-template'),
 
 	render: function(){
 		this.$el.html(this.resumeTemplate());
@@ -75,7 +80,7 @@ var resumeView = new app.resumeView();
 app.contactView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	contactTemplate: template("contact-template"),
+	contactTemplate: template('contact-template'),
 
 	render: function(){
 		this.$el.html(this.contactTemplate());

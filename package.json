@@ -1,5 +1,8 @@
 {
   "private": true,
+  "globals": {
+    "$" : false
+  },
   "engines": {
     "node": ">=0.12.0"
   },
@@ -36,7 +39,8 @@
       "quotes": [
         2,
         "single"
-      ]
+      ],
+      "new-cap": false
     }
   }
 }

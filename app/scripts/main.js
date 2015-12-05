@@ -1,29 +1,25 @@
+/* global $, _ */
+/*eslint no-undef: 0, no-unused-vars: 0*/
+
+'use strict';
+
 $(document).ready(function() {
 
-	function adjust_body_offset() {
+	function adjustBodyOffset() {
 
 		$('body').css('padding-top', $('.navbar-inverse').outerHeight(true) + 20 + 'px' );
 
 	}
 
-	$(window).resize(adjust_body_offset);
+	$(window).resize(adjustBodyOffset);
 
-	$(document).ready(adjust_body_offset);
+	$(document).ready(adjustBodyOffset);
 
-    $(".disabled-link").hover(
-    	function() {
-    		$(this).find('.error').preventDefault();
-    	}
-    );
-});
-
-$(function() {
-  $('.chart').easyPieChart({
-    barColor: '#3498db',
-    size: '150',
-    lineWidth: '2',
-    easing: 'easeOutBounce',
-  });
+	$('.disabled-link').hover(
+		function() {
+			$(this).find('.error').preventDefault();
+		}
+	);
 });
 
 /*
@@ -33,7 +29,7 @@ $(function() {
  */
 var template = function(id){
 
-	return _.template($("#" + id).html());
+	return _.template($('#' + id).html());
 
 };
 
