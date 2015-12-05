@@ -129,8 +129,8 @@ i.fa {
 }
 
 @media screen and (max-width: 768px){
-  .resume-photo {
-    &#dp-set: display: none;
+  .resume-photo#hideDP {
+    display: none;
   }
   .display-photo {
     display: none;
