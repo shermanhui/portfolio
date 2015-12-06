@@ -5,49 +5,42 @@
 
 var app = app || {};
 
-app.myDetails = Backbone.Model.extend({
-	urlRoot: "scripts/profile.json",
+app.projectDetails = Backbone.Model.extend({
+
+	urlRoot: "/profile.json",
 
 	initialize: function(attrs){
 		console.log("model init");
-
 	},
 
 	validate: function(attrs){
 		if (!attrs){
 			return "Missing Data!";
 		}
-	},
-
-	parse: function(response){
-		console.log("lol");
 	}
 });
 
 
-app.detailsCollection = Backbone.Collection.extend({
-	model: app.myDetails,
+app.projectCollection = Backbone.Collection.extend({
+
+	model: app.projectDetails,
+
+	url: "/profile.json",
 
 	initialize: function(){
 		console.log("collection init");
-	},
-
-	parse: function(response){
-		return response
 	}
 });
 
-var sherman = new app.detailsCollection();
-console.log(sherman);
-// sherman.fetch({
-// 	url: "scripts/profile.json",
-// 	success: function(){
-// 		console.log(sherman);
-// 	},
-// 	error: function(){
-// 		console.log("error");
-// 	}
-// });
+var projects = new app.projectCollection();
+projects.fetch({
+	success: function(){
+		console.log(projects);
+	},
+	error: function(){
+		console.log("something went wrong");
+	}
+});
 
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',

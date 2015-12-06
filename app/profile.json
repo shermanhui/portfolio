@@ -1,0 +1,44 @@
+[
+	{
+		"title" : "Calorie Tracker",
+		"dates" : " ",
+		"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
+		"image" : "http://i.imgur.com/dUTGP2qm.png"
+	},
+	{
+		"title" : "Neighbourhood Map",
+		"dates" : " ",
+		"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
+		"image" : "http://i.imgur.com/uVWPgAgm.png"
+	},
+	{
+		"title" : "Asteroids Clone",
+		"dates" : " ",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png"
+	},
+	{
+		"title" : "Frogger Clone",
+		"dates" : " ",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png"
+	},
+	{
+		"title" : "Feedreader Testing (Jasmine)",
+		"dates" : " ",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png"
+	},
+	{
+		"title" : "Website Optimization",
+		"dates" : " ",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png"
+	},
+	{
+		"title" : "Online Resume",
+		"dates" : " ",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png"
+	}
+]
