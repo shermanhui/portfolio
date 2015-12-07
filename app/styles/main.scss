@@ -86,8 +86,8 @@ p {
   }
 }
 
-.row .portfolio-item:nth-child(3n + 1){
-  clear: left;
+.row .portfolio-item:nth-child(3n + 1){ // clearfix for project items RMB TO CHANGE CLEAR FOR MEDIA QUERIES!!
+  clear: both;
 }
 
 .navbar-bottom{
