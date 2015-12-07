@@ -24,7 +24,8 @@ app.Router = Backbone.Router.extend({
 	},
 
 	renderPortfolio: function(){
-		portfolioView.render();
+		projectsView.render();
+		//portfolioView.render();
 	},
 
 	renderResume: function(){

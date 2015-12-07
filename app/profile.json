@@ -1,44 +1,91 @@
 [
 	{
 		"title" : "Calorie Tracker",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
-		"image" : "http://i.imgur.com/dUTGP2qm.png"
+		"image" : "http://i.imgur.com/dUTGP2qm.png",
+		"alt" : "Tracker Image"
 	},
 	{
 		"title" : "Neighbourhood Map",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
-		"image" : "http://i.imgur.com/uVWPgAgm.png"
+		"image" : "http://i.imgur.com/uVWPgAgm.png",
+		"alt" : "Tracker Image"
+
 	},
 	{
 		"title" : "Asteroids Clone",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
-		"image" : "http://i.imgur.com/2IF5sX2m.png"
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
 	},
 	{
 		"title" : "Frogger Clone",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
-		"image" : "http://i.imgur.com/2IF5sX2m.png"
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
 	},
 	{
 		"title" : "Feedreader Testing (Jasmine)",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
-		"image" : "http://i.imgur.com/2IF5sX2m.png"
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
 	},
 	{
 		"title" : "Website Optimization",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
-		"image" : "http://i.imgur.com/2IF5sX2m.png"
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
 	},
 	{
 		"title" : "Online Resume",
+		"caption": "My First Backbone Project",
 		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
 		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
-		"image" : "http://i.imgur.com/2IF5sX2m.png"
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
+	},
+	{
+		"title" : "Online Resume",
+		"caption": "My First Backbone Project",
+		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
+	},
+	{
+		"title" : "Online Resume",
+		"caption": "My First Backbone Project",
+		"dates" : " ",
+		"url": "https://shui91.github.io/backbone-healthtracker-app",
+		"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+		"image" : "http://i.imgur.com/2IF5sX2m.png",
+		"alt" : "Tracker Image"
+
 	}
 ]

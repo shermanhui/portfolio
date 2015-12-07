@@ -120,6 +120,17 @@
         </div>
       </div>
       </script>
+
+      <script type="text/template" id="project-item-template">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3><a href= <%= url %>><%= caption %></a></h3>
+            </div>
+            <img class="img-responsive" src= <%= image %> alt=<%= alt %>/>
+          </div>
+          <h3 class="project-title text-center"><%= title %></h3>
+      </script>
+
       <script type="text/template" id="folio-template">
         <div class="col-lg-12 text-center">
           <h1>My Portfolio</h1>

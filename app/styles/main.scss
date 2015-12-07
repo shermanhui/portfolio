@@ -86,6 +86,10 @@ p {
   }
 }
 
+.row .portfolio-item:nth-child(3n + 1){
+  clear: left;
+}
+
 .navbar-bottom{
   background: #f5f5f5;
 }
