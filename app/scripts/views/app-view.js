@@ -161,6 +161,7 @@ app.portfolioView = Backbone.View.extend({
 	portfolioTemplate: template('folio-template'),
 
 	render: function(){
+		this.$el.empty();
 		this.$el.prepend(this.portfolioTemplate());
 
 		return this;
