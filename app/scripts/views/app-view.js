@@ -104,7 +104,6 @@ app.appView = Backbone.View.extend({
 var aboutView = new app.appView();
 
 app.projectItemView = Backbone.View.extend({
-	tagName: 'div',
 
 	className: 'col-md-4 col-sm-6 portfolio-item',
 
@@ -119,6 +118,7 @@ app.projectItemView = Backbone.View.extend({
 	},
 
 	render: function(){
+
 		this.$el.html(this.projectTemplate(this.model.toJSON()));
 
 		return this;
@@ -131,19 +131,19 @@ app.projectsView = Backbone.View.extend({
 	initialize: function(options){
 		//space for event bus
 
-		this.listenTo(this.collection, 'reset', this.render);
+		//this.listenTo(this.collection, 'reset', this.render); this causes duplicate renders...but collection didn't reset?
 
 	},
 
 	render: function(){
 		var self = this;
-		var i = 0;
-		self.$el.html('<div class="row"></div>')
+
+		self.$el.append('<div class="row"></div>');
 
 		self.collection.each(function(project){
+
 			var el = $(".row");
 
-			// 		self.$el.append('<div class="clearfix"></div>');
 			var projectItem = new app.projectItemView({model: project});
 
 			el.append(projectItem.render().$el);
@@ -155,19 +155,19 @@ app.projectsView = Backbone.View.extend({
 
 var projectsView = new app.projectsView({collection: projects});
 
-// app.portfolioView = Backbone.View.extend({
-// 	el: '.portfolio-body',
+app.portfolioView = Backbone.View.extend({
+	el: '.portfolio-body',
 
-// 	portfolioTemplate: template('folio-template'),
+	portfolioTemplate: template('folio-template'),
 
-// 	render: function(){
-// 		this.$el.html(this.portfolioTemplate());
+	render: function(){
+		this.$el.prepend(this.portfolioTemplate());
 
-// 		return this;
-// 	}
-// });
+		return this;
+	}
+});
 
-// var portfolioView = new app.portfolioView();
+var portfolioView = new app.portfolioView();
 
 app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
