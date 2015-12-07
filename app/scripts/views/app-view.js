@@ -131,7 +131,7 @@ app.projectsView = Backbone.View.extend({
 	initialize: function(options){
 		//space for event bus
 
-		//this.listenTo(this.collection, 'reset', this.render); this causes duplicate renders...but collection didn't reset?
+		//this.listenTo(this.collection, 'reset', this.render); //this causes duplicate renders...but collection didn't reset?
 
 	},
 
