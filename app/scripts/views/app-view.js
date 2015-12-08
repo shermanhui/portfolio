@@ -10,7 +10,7 @@ app.projectDetails = Backbone.Model.extend({
 	urlRoot: "/profile.json",
 
 	initialize: function(attrs){
-		console.log("model init");
+		//console.log("model init");
 	},
 
 	defaults: {
@@ -38,40 +38,16 @@ app.projectCollection = Backbone.Collection.extend({
 	url: "/profile.json",
 
 	initialize: function(){
-		console.log("collection init");
-	}
-});
-
-// var projects = new app.projectCollection([{
-// 		"title" : "Calorie Tracker",
-// 		"caption": "My First Backbone Project",
-// 		"dates" : " ",
-// 		"url": "https://shui91.github.io/backbone-healthtracker-app",
-// 		"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
-// 		"image" : "http://i.imgur.com/dUTGP2qm.png",
-// 		"alt" : "Tracker Image"
-// 	},
-// 	{
-// 		"title" : "Neighbourhood Map",
-// 		"caption": "My First Backbone Project",
-// 		"dates" : " ",
-// 		"url": "https://shui91.github.io/backbone-healthtracker-app",
-// 		"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
-// 		"image" : "http://i.imgur.com/uVWPgAgm.png",
-// 		"alt" : "Tracker Image"
-
-// 	}]);
-var projects = new app.projectCollection();
-projects.fetch({
-	reset: true,
-
-	success: function(){
-		console.log(projects);
+		//console.log("collection init");
 	},
-	error: function(){
-		console.log("something went wrong");
+
+	parse: function(attrs){
+		return attrs.projects;
 	}
 });
+
+var projects = new app.projectCollection();
+projects.fetch({reset: true});
 
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
@@ -110,8 +86,6 @@ app.projectItemView = Backbone.View.extend({
 	projectTemplate: template("project-item-template"),
 
 	initialize: function(options){
-
-		console.log(this.model);
 
 		//space for event bus
 
@@ -160,9 +134,13 @@ app.portfolioView = Backbone.View.extend({
 
 	portfolioTemplate: template('folio-template'),
 
+	initialize: function(){
+		this.render();
+	},
+
 	render: function(){
-		this.$el.empty();
-		this.$el.prepend(this.portfolioTemplate());
+		this.$el.html(this.portfolioTemplate());
+		projectsView.render();
 
 		return this;
 	}
