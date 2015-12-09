@@ -16,7 +16,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		this.listenTo(this.collection, 'add', this.render); //prevents refresh on different pages, but if this is off then
+		this.listenTo(this.collection, 'add', this.render);
 	},
 
 	onHover: function(e){
@@ -44,13 +44,21 @@ var aboutView = new app.appView({collection: featured});
 app.portfolioView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	projectTemplate: template('project-item-template'),
+	projectTemplate: template('portfolio-template'),
 
 	initialize: function(options){
 		//space for event bus
 
-		this.listenTo(this.collection, 'add', this.render); //this causes duplicate renders...but collection didn't reset?
+		this.listenTo(this.collection, 'add', this.render);
 
+	},
+
+	event: {
+		'click .portfolio-item': 'showModal'
+	},
+
+	showModal: function(){
+		console.log("clicked")
 	},
 
 	render: function(){
