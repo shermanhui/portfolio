@@ -1,4 +1,13 @@
 {
+	"basics": [
+		{
+			"name" : "Sherman Hui",
+			"position" : "Front End Developer",
+			"email" : "sherman.sy.hui@gmail.com",
+			"phone" : "123-234-567",
+			"intro" : "Hello!"
+		}
+	],
 	"projects": [
 		{
 			"title" : "Calorie Tracker",
@@ -80,6 +89,44 @@
 			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
 			"image" : "http://i.imgur.com/bV8dxT3.png",
 			"alt" : "ReactJS Image"
+		}
+	],
+	"topProjects": [
+		{
+			"title" : "Calorie Tracker",
+			"caption": "My First Backbone Project",
+			"dates" : " ",
+			"url": "https://shui91.github.io/backbone-healthtracker-app",
+			"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
+			"image" : "http://i.imgur.com/dUTGP2qm.png",
+			"alt" : "Tracker Image"
+		},
+		{
+			"title" : "Neighbourhood Map",
+			"caption": "My First MV* Project",
+			"dates" : " ",
+			"url": "https://shui91.github.io/frontend-nanodegree-map-webapp",
+			"description" : "Using KnockoutJS, OOJS, and various Web APIs, I built a simple pub crawl app",
+			"image" : "http://i.imgur.com/uVWPgAgm.png",
+			"alt" : "Map Image"
+		},
+		{
+			"title" : "Asteroids Clone",
+			"caption": "How I Made Asteroids",
+			"dates" : " ",
+			"url": "https://shui91.github.io/project-asteroids",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"image" : "http://i.imgur.com/2IF5sX2m.png",
+			"alt" : "Asteroids Image"
+		},
+		{
+			"title" : "Frogger Clone",
+			"caption": "Remaking Frogger",
+			"dates" : " ",
+			"url": "https://github.com/shui91/frontend-nanodegree-arcade-game",
+			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game Asteroids",
+			"image" : "http://i.imgur.com/AByzuATm.png",
+			"alt" : "Clone Image"
 		}
 	]
 }
