@@ -46,7 +46,7 @@ app.projectCollection = Backbone.Collection.extend({
 });
 
 var projects = new app.projectCollection();
-projects.fetch({reset: true});
+projects.fetch();
 
 app.featuredCollection = Backbone.Collection.extend({
 
@@ -58,4 +58,4 @@ app.featuredCollection = Backbone.Collection.extend({
 });
 
 var featured = new app.featuredCollection();
-featured.fetch({reset: true});
+featured.fetch();

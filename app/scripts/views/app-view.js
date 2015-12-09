@@ -16,7 +16,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		//this.listenTo(this.collection, 'reset', this.render); //prevents refresh on different pages, but if this is off then
+		this.listenTo(this.collection, 'add', this.render); //prevents refresh on different pages, but if this is off then
 	},
 
 	onHover: function(e){
@@ -49,7 +49,7 @@ app.portfolioView = Backbone.View.extend({
 	initialize: function(options){
 		//space for event bus
 
-		//this.listenTo(this.collection, 'reset', this.render); //this causes duplicate renders...but collection didn't reset?
+		this.listenTo(this.collection, 'add', this.render); //this causes duplicate renders...but collection didn't reset?
 
 	},
 
