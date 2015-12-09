@@ -5,50 +5,6 @@
 
 var app = app || {};
 
-app.projectDetails = Backbone.Model.extend({
-
-	urlRoot: "/profile.json",
-
-	initialize: function(attrs){
-		//console.log("model init");
-	},
-
-	defaults: {
-		title: "No Title",
-		dates: "Unknown",
-		caption: "Unknown",
-		description: "Placeholder",
-		url: "",
-		image: "",
-		alt: "Placeholder-image"
-	},
-
-	validate: function(attrs){
-		if (!attrs){
-			return "Missing Data!";
-		}
-	}
-});
-
-
-app.projectCollection = Backbone.Collection.extend({
-
-	model: app.projectDetails,
-
-	url: "/profile.json",
-
-	initialize: function(){
-		//console.log("collection init");
-	},
-
-	parse: function(attrs){
-		return attrs.projects;
-	}
-});
-
-var projects = new app.projectCollection();
-projects.fetch({reset: true});
-
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
 
@@ -57,6 +13,10 @@ app.appView = Backbone.View.extend({
 	events: {
 		'mouseover .thumbnail': 'onHover',
 		'mouseout .thumbnail': 'onLeave'
+	},
+
+	initialize: function(){
+		this.listenTo(this.collection, 'reset', this.render);
 	},
 
 	onHover: function(e){
@@ -70,14 +30,19 @@ app.appView = Backbone.View.extend({
 	},
 
 	render: function(){
-		this.$el.html(this.aboutTemplate());
+		var self = this;
+
+		// self.collection.each(function(model){
+		// 	self.$el.html(self.aboutTemplate({models: model}))
+		// })
+		this.$el.html(this.aboutTemplate({collection: this.collection.toJSON()}));
 
 		return this;
 	}
 
 });
 
-var aboutView = new app.appView();
+var aboutView = new app.appView({collection: featured});
 
 app.projectItemView = Backbone.View.extend({
 
