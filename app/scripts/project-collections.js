@@ -7,25 +7,25 @@ var app = app || {};
 
 app.projectDetails = Backbone.Model.extend({
 
-	urlRoot: "/profile.json",
+	urlRoot: '/profile.json',
 
 	initialize: function(attrs){
-		//console.log("model init");
+		//console.log('model init');
 	},
 
 	defaults: {
-		title: "No Title",
-		dates: "Unknown",
-		caption: "Unknown",
-		description: "Placeholder",
-		url: "",
-		image: "",
-		alt: "Placeholder-image"
+		title: 'No Title',
+		dates: 'Unknown',
+		caption: 'Unknown',
+		description: 'Placeholder',
+		url: '',
+		image: '',
+		alt: 'Placeholder-image'
 	},
 
 	validate: function(attrs){
 		if (!attrs){
-			return "Missing Data!";
+			return 'Missing Data!';
 		}
 	}
 });
@@ -34,10 +34,10 @@ app.projectCollection = Backbone.Collection.extend({
 
 	model: app.projectDetails,
 
-	url: "/profile.json",
+	url: '/profile.json',
 
 	initialize: function(){
-		//console.log("collection init");
+		//console.log('collection init');
 	},
 
 	parse: function(attrs){
@@ -50,7 +50,7 @@ projects.fetch({reset: true});
 
 app.featuredCollection = Backbone.Collection.extend({
 
-	url: "/profile.json",
+	url: '/profile.json',
 
 	parse: function(attrs){
 		return attrs.topProjects;

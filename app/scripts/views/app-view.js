@@ -44,7 +44,7 @@ var aboutView = new app.appView({collection: featured});
 app.portfolioView = Backbone.View.extend({
 	el: '.portfolio-body',
 
-	projectTemplate: template("project-item-template"),
+	projectTemplate: template('project-item-template'),
 
 	initialize: function(options){
 		//space for event bus
