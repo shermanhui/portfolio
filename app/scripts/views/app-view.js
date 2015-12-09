@@ -16,7 +16,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		this.listenTo(this.collection, 'add', this.render);
+		this.listenTo(this.collection, 'add', this.render); //this is a problem because when user refreshes page, it automatically re-renders to about or profile page
 	},
 
 	onHover: function(e){
@@ -53,12 +53,15 @@ app.portfolioView = Backbone.View.extend({
 
 	},
 
-	event: {
+	events: {
 		'click .portfolio-item': 'showModal'
 	},
 
-	showModal: function(){
-		console.log("clicked")
+	showModal: function(e){
+		e.preventDefault();
+		modalView.render();
+		console.log("clicked" + e.currentTarget.html);
+
 	},
 
 	render: function(){
@@ -69,6 +72,25 @@ app.portfolioView = Backbone.View.extend({
 });
 
 var portfolioView = new app.portfolioView({collection: projects});
+
+app.modalView = Backbone.View.extend({
+	className: 'modal fade',
+
+	modalTemplate: template('modal-template'),
+
+	attributes: {
+		tabindex: '-1',
+		role: 'dialog'
+	},
+
+	render: function(){
+		this.$el.html(this.modalTemplate()).modal();
+
+		return this;
+	}
+});
+
+var modalView = new app.modalView();
 
 app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
