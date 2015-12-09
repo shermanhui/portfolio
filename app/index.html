@@ -96,20 +96,22 @@
       </script>
 
       <script type="text/template" id="project-item-template">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3><a href= <%= url %>><%= caption %></a></h3>
-            </div>
-            <img class="img-responsive" src= <%= image %> alt=<%= alt %>/>
-          </div>
-          <h3 class="project-title text-center"><%= title %></h3>
-      </script>
-
-      <script type="text/template" id="folio-template">
-        <div class="col-lg-12 text-center">
+              <div class="col-lg-12 text-center">
           <h1>My Portfolio</h1>
           <hr>
           <p class="lead">As a largely self-taught developer, these projects are the product of the development of my Front End skillsets. HTML5, CSS3 and JavaScript are my best friends. I am knowledgable with frameworks and libraries such as BackboneJS, KnockoutJS, jQuery, underscore and SASS. I also employ the use of build tools such as Grunt and Gulp and testing frameworks like Jasmine.</p>
+        </div>
+        <div class="row">
+          <% _.each(collection, function(model){ %>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+          <div class="thumbnail">
+            <div class="caption">
+              <h3><a href= <%= model.url %>><%= model.caption %></a></h3>
+            </div>
+            <img class="img-responsive" src= <%= model.image %> alt=<%= model.alt %>/>
+          </div>
+          <h3 class="project-title text-center"><%= model.title %></h3>
+          </div><%});%>
         </div>
       </script>
 
