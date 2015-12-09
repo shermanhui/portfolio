@@ -16,7 +16,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		this.listenTo(this.collection, 'reset', this.render);
+		//this.listenTo(this.collection, 'reset', this.render); //prevents refresh on different pages, but if this is off then
 	},
 
 	onHover: function(e){
@@ -30,11 +30,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	render: function(){
-		var self = this;
 
-		// self.collection.each(function(model){
-		// 	self.$el.html(self.aboutTemplate({models: model}))
-		// })
 		this.$el.html(this.aboutTemplate({collection: this.collection.toJSON()}));
 
 		return this;
@@ -44,28 +40,11 @@ app.appView = Backbone.View.extend({
 
 var aboutView = new app.appView({collection: featured});
 
-app.projectItemView = Backbone.View.extend({
 
-	className: 'col-md-4 col-sm-6 portfolio-item',
+app.portfolioView = Backbone.View.extend({
+	el: '.portfolio-body',
 
 	projectTemplate: template("project-item-template"),
-
-	initialize: function(options){
-
-		//space for event bus
-
-	},
-
-	render: function(){
-
-		this.$el.html(this.projectTemplate(this.model.toJSON()));
-
-		return this;
-	}
-});
-
-app.projectsView = Backbone.View.extend({
-	el: '.portfolio-body',
 
 	initialize: function(options){
 		//space for event bus
@@ -75,43 +54,13 @@ app.projectsView = Backbone.View.extend({
 	},
 
 	render: function(){
-		var self = this;
-
-		self.$el.append('<div class="row"></div>');
-
-		self.collection.each(function(project){
-
-			var el = $(".row");
-
-			var projectItem = new app.projectItemView({model: project});
-
-			el.append(projectItem.render().$el);
-		});
+		this.$el.html(this.projectTemplate({collection: this.collection.toJSON()}));
 
 		return this;
 	}
 });
 
-var projectsView = new app.projectsView({collection: projects});
-
-app.portfolioView = Backbone.View.extend({
-	el: '.portfolio-body',
-
-	portfolioTemplate: template('folio-template'),
-
-	initialize: function(){
-		this.render();
-	},
-
-	render: function(){
-		this.$el.html(this.portfolioTemplate());
-		projectsView.render();
-
-		return this;
-	}
-});
-
-var portfolioView = new app.portfolioView();
+var portfolioView = new app.portfolioView({collection: projects});
 
 app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
