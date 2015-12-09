@@ -58,7 +58,4 @@ app.featuredCollection = Backbone.Collection.extend({
 });
 
 var featured = new app.featuredCollection();
-featured.fetch({reset: true,
-success: function(){
-	console.log(featured);
-}});
+featured.fetch({reset: true});
