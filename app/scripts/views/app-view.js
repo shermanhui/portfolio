@@ -60,7 +60,7 @@ app.portfolioView = Backbone.View.extend({
 	showModal: function(e){
 		e.preventDefault();
 		modalView.render();
-		console.log("clicked" + e.currentTarget.html);
+		console.log("clicked" + $(e.currentTarget).html());
 
 	},
 
