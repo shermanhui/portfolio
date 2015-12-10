@@ -5,6 +5,8 @@
 
 var app = app || {};
 
+app.Bus = _.extend({}, Backbone.Events); // bus object instantiation, pass bus object to have reference to the data in each view
+
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
 
@@ -16,7 +18,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		this.listenTo(this.collection, 'add', this.render); //this is a problem because when user refreshes page, it automatically re-renders to about or profile page
+		//this.listenTo(this.collection, 'add', this.render); //this is a problem because when user refreshes page, it automatically re-renders to about or profile page
 	},
 
 	onHover: function(e){
@@ -40,58 +42,115 @@ app.appView = Backbone.View.extend({
 
 var aboutView = new app.appView({collection: featured});
 
+app.projectItemView = Backbone.View.extend({
 
-app.portfolioView = Backbone.View.extend({
-	el: '.portfolio-body',
+	className: 'col-md-4 col-sm-6 portfolio-item',
 
-	projectTemplate: template('portfolio-template'),
+	projectTemplate: template("project-item-template"),
 
 	initialize: function(options){
-		//space for event bus
 
-		this.listenTo(this.collection, 'add', this.render);
+		this.bus = options.bus;
+
+		//space for event bus
 
 	},
 
 	events: {
-		'click .portfolio-item': 'showModal'
+		'click': 'showModal',
 	},
 
 	showModal: function(e){
 		e.preventDefault();
-		modalView.render();
-		console.log("clicked" + $(e.currentTarget).html());
+
+		this.bus.trigger('renderModal', this.model); // shows user details on food item
 
 	},
 
 	render: function(){
-		console.log(this.collection.toJSON());
-		this.$el.html(this.projectTemplate({collection: this.collection.toJSON()}));
+
+		this.$el.html(this.projectTemplate(this.model.toJSON()));
 
 		return this;
 	}
 });
 
-var portfolioView = new app.portfolioView({collection: projects});
+
+app.projectsView = Backbone.View.extend({
+	el: '.portfolio-body',
+
+	initialize: function(options){
+		//space for event bus
+
+		//this.listenTo(this.collection, 'reset', this.render); //this causes duplicate renders...but collection didn't reset?
+
+	},
+
+	render: function(){
+		var self = this;
+
+		self.$el.append('<div class="row"></div>');
+
+		self.collection.each(function(project){
+
+			var el = $(".row");
+
+			var projectItem = new app.projectItemView({bus: app.Bus, model: project});
+
+			el.append(projectItem.render().$el);
+		});
+
+		return this;
+	}
+});
+
+var projectsView = new app.projectsView({collection: projects});
+
+app.portfolioView = Backbone.View.extend({
+	el: '.portfolio-body',
+
+	portfolioTemplate: template('folio-template'),
+
+	initialize: function(){
+
+	},
+
+	render: function(){
+		this.$el.html(this.portfolioTemplate());
+		projectsView.render();
+
+		return this;
+	}
+});
+
+var portfolioView = new app.portfolioView();
 
 app.modalView = Backbone.View.extend({
 	className: 'modal fade',
 
 	modalTemplate: template('modal-template'),
 
+	initialize: function(options){
+		this.bus = options.bus;
+
+		this.bus.on("renderModal", this.renderModal, this);
+	},
+
 	attributes: {
 		tabindex: '-1',
 		role: 'dialog'
 	},
 
-	render: function(){
-		this.$el.html(this.modalTemplate()).modal();
+	renderModal: function(data){
+		this.model = data;
+
+		this.$el.html(this.modalTemplate(this.model.toJSON())).modal();
 
 		return this;
 	}
 });
 
-var modalView = new app.modalView();
+var modalView = new app.modalView({bus: app.Bus});
 
 app.resumeView = Backbone.View.extend({
 	el: '.portfolio-body',
