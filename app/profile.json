@@ -28,7 +28,7 @@
 			"description" : "Using KnockoutJS, OOJS, build tools such as Gulp, and various Web APIs, I built a simple pub crawl SPA",
 			"image" : ["/assets/images/pubcrawl.png", "/assets/images/backbone.png"],
 			"technologies": ["/assets/images/knockout.png", "/assets/images/yeoman.jpg", "/assets/images/gulp.png"],
-			"method": "Having no previous knowledge of MVVM concepts, I took a lot of time learning how to create the todoMVC project",
+			"method": "Having no previous knowledge of MVVM concepts, I took a lot of time learning how to create the todoMVC project. After completing the todo list. I created a small sandbox project solely to learn about the GoogleMaps API. Once I understood how to use the API, I combined the todo-list logic with the map logic to create a small map that displayed a list of locations. Afterwards, I had to learn how to implement AJAX calls to retrieve data from third party APIs, as well as allow the user to communicate with the API via my application. Again, I took this task and built a smaller project to get the functionalities to work before implementing it into my project. Finally, I was able to get a dynamic list of locations to populate depending on the location the user input.",
 			"alt" : "Map Image"
 		},
 		{
@@ -39,7 +39,7 @@
 			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game, Asteroids",
 			"image" : ["http://i.imgur.com/2IF5sX2.png"],
 			"technologies": ["/assets/images/html5.png", "/assets/images/css3.png", "/assets/images/javascript.png"],
-			"method": "Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now",
+			"method": "This project was ported over from a previous 'Intro to Computer Science' course on Coursera by Rice University. The code was originally in Python, porting it over to JavaScript was a great learning experience because I got more exposureto how JavaScript's Object Orientated nature, closures, inheritence and scope work in a game. One of the key things I learned is that even functions are objects in JS, and that blew my mind.",
 			"alt" : "Asteroids Image"
 		},
 		{
@@ -50,7 +50,7 @@
 			"description" : "An introduction to Object Orientated Programming and the predecessor to my Asteroids Clone",
 			"image" : ["http://i.imgur.com/AByzuAT.png"],
 			"technologies": ["/assets/images/html5.png", "/assets/images/css3.png", "/assets/images/javascript.png"],
-			"method": "Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now",
+			"method": "Object Orientated JavaScript was tough to get a hang of at first. A lot of review over closures, scopes, the keyword 'this' and prototypal inheritence was required before I even touched the keyboard. Once I understood the basic concepts. I built a game object class and extended that into Player, Enemy and Gem classes. I implemented simple collision, screen wrap around, and scoring logic to complete the basic functionalities. From there I used Udacity's game engine to produce the simple Frogger clone in the link above!",
 			"alt" : "Clone Image"
 		},
 		{
@@ -61,7 +61,7 @@
 			"description" : "My introductory project into learning how to use Jasmine and Test-Driven Programming",
 			"image" : ["http://i.imgur.com/eD42DHi.png"],
 			"technologies": ["/assets/images/jasmine.png", "/assets/images/javascript.png", "/assets/images/handlebars.png"],
-			"method": "Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now Filler Text For Now",
+			"method": "I completed this project by reading through Jasmine's crystal clear documentation. Implementing tests for projects is crucial for preventing unexpected bugs and allow members of a team to smoothly implement features without conflict. I also learned how to use handlebars for templating.",
 			"alt" : "Feed Reader Image"
 		},
 		{

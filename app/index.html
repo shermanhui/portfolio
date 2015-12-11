@@ -111,10 +111,11 @@
             <p><%= method %></p>
           </div>
         </div>
+        <hr>
         <h3 class="text-left">Made With</h3>
         <div class="row">
           <% _.each(technologies, function(img){%>
-            <div class=".col-xs-6 .col-sm-4"><img class="img-responsive tech-images" src= <%= img %> /></div>
+            <div class="col-md-4 col-xs-4"><img class="img-responsive tech-images" src= <%= img %> /></div>
           <%});%>
         </div>
       </div>
