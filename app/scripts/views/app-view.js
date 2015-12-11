@@ -18,7 +18,7 @@ app.appView = Backbone.View.extend({
 	},
 
 	initialize: function(){
-		//this.listenTo(this.collection, 'add', this.render); //this is a problem because when user refreshes page, it automatically re-renders to about or profile page
+		this.listenTo(featured, 'add', this.render); //this is a problem because when user refreshes page, it automatically re-renders to about or profile page
 	},
 
 	onHover: function(e){
@@ -44,7 +44,7 @@ var aboutView = new app.appView({collection: featured});
 
 app.projectItemView = Backbone.View.extend({
 
-	className: 'col-md-4 col-sm-6 portfolio-item',
+	className: 'col-xs-6 col-sm-4 portfolio-item',
 
 	projectTemplate: template("project-item-template"),
 
@@ -81,15 +81,11 @@ app.projectsView = Backbone.View.extend({
 
 	initialize: function(options){
 		//space for event bus
-
-		//this.listenTo(this.collection, 'reset', this.render); //this causes duplicate renders...but collection didn't reset?
-
+		this.listenTo(this.collection, 'reset', this.render); //this causes duplicate renders...but collection didn't reset?
 	},
 
 	render: function(){
 		var self = this;
-
-		self.$el.append('<div class="row"></div>');
 
 		self.collection.each(function(project){
 
@@ -112,12 +108,14 @@ app.portfolioView = Backbone.View.extend({
 	portfolioTemplate: template('folio-template'),
 
 	initialize: function(){
-
 	},
 
 	render: function(){
 		this.$el.html(this.portfolioTemplate());
-		projectsView.render();
+
+		this.$el.append('<div class="row"></div>');
+
+		//projectsView.render(); // this causes a duplicate render due to projects.fetch({reset: true})
 
 		return this;
 	}
