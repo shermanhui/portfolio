@@ -97,33 +97,33 @@
 
       <script type="text/template" id="modal-template">
       <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <img class="img-responsive" src= <%= image[0] %> alt=<%= alt %>/>
-        <a src=<%= url %>><h2 class="modal-title text-center" id="myModalLabel"><%= title %></h2></a>
-        <p class="text-center"><%= description %></p>
-      </div>
-      <div class="modal-body">
-        <h3 class="text-left">My Process</h3>
-        <div class="row">
-          <div class="col-lg-12 text-left">
-            <p><%= method %></p>
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <img class="img-responsive" src= <%= image[0] %> alt=<%= alt %>/>
+              <a src=<%= url %>><h2 class="modal-title text-center" id="myModalLabel"><%= title %></h2></a>
+              <p class="text-center"><%= description %></p>
+          </div>
+          <div class="modal-body">
+            <h3 class="text-left">My Process</h3>
+            <div class="row">
+              <div class="col-lg-12 text-left">
+                <p><%= method %></p>
+              </div>
+            </div>
+            <hr>
+            <h3 class="text-left">Made With</h3>
+            <div class="row">
+              <% _.each(technologies, function(img){%>
+                <div class="col-md-4 col-xs-4"><img class="img-responsive tech-images" src= <%= img %> /></div>
+              <%});%>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
           </div>
         </div>
-        <hr>
-        <h3 class="text-left">Made With</h3>
-        <div class="row">
-          <% _.each(technologies, function(img){%>
-            <div class="col-md-4 col-xs-4"><img class="img-responsive tech-images" src= <%= img %> /></div>
-          <%});%>
-        </div>
       </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-  </div>
       </script>
       <script type="text/template" id="project-item-template">
           <div class="thumbnail">
@@ -140,26 +140,6 @@
           <h1>My Portfolio</h1>
           <hr>
           <p class="lead">As a largely self-taught developer, these projects are the product of the development of my Front End skillsets. HTML5, CSS3 and JavaScript are my best friends. I am knowledgable with frameworks and libraries such as BackboneJS, KnockoutJS, jQuery, underscore and SASS. I also employ the use of build tools such as Grunt and Gulp and testing frameworks like Jasmine.</p>
-        </div>
-      </script>
-
-      <script type="text/template" id="portfolio-template"> //temp unused because of lack of modal support
-        <div class="col-lg-12 text-center">
-          <h1>My Portfolio</h1>
-          <hr>
-          <p class="lead">As a largely self-taught developer, these projects are the product of the development of my Front End skillsets. HTML5, CSS3 and JavaScript are my best friends. I am knowledgable with frameworks and libraries such as BackboneJS, KnockoutJS, jQuery, underscore and SASS. I also employ the use of build tools such as Grunt and Gulp and testing frameworks like Jasmine.</p>
-        </div>
-        <div class="row">
-          <% _.each(collection, function(model){ %>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-          <div class="thumbnail">
-            <div class="caption">
-              <h3><a href= <%= model.url %>><%= model.caption %></a></h3>
-            </div>
-            <img class="img-responsive" src= <%= model.image %> alt=<%= model.alt %>/>
-          </div>
-          <h3 class="project-title text-center"><%= model.title %></h3>
-          </div><%});%>
         </div>
       </script>
 
@@ -237,7 +217,7 @@
                 </div>
                 <div class="col-md-4">
                   <h3>Front End Nanodegree</h3>
-                  <p> Udacity, May 2015, <a href="https://www.coursera.org/account/accomplishments/verify/762MAG5HLH">Certification</a>
+                  <p> Udacity, December 2015, <a href="https://www.udacity.com/course/front-end-web-developer-nanodegree--nd001">Certification</a>
                   </p>
                 </div>
                 </div>

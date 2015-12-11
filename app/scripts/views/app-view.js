@@ -46,7 +46,7 @@ app.projectItemView = Backbone.View.extend({
 
 	className: 'col-xs-6 col-sm-4 portfolio-item',
 
-	projectTemplate: template("project-item-template"),
+	projectTemplate: template('project-item-template'),
 
 	initialize: function(options){
 
@@ -57,7 +57,7 @@ app.projectItemView = Backbone.View.extend({
 	},
 
 	events: {
-		'click': 'showModal',
+		'click': 'showModal'
 	},
 
 	showModal: function(e){
@@ -89,7 +89,7 @@ app.projectsView = Backbone.View.extend({
 
 		self.collection.each(function(project){
 
-			var el = $(".row");
+			var el = $('.row');
 
 			var projectItem = new app.projectItemView({bus: app.Bus, model: project});
 
@@ -131,7 +131,7 @@ app.modalView = Backbone.View.extend({
 	initialize: function(options){
 		this.bus = options.bus;
 
-		this.bus.on("renderModal", this.renderModal, this);
+		this.bus.on('renderModal', this.renderModal, this);
 	},
 
 	attributes: {
