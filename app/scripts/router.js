@@ -20,10 +20,12 @@ app.Router = Backbone.Router.extend({
 	},
 
 	renderAbout: function(){
+		featured.fetch();
 		aboutView.render();
 	},
 
 	renderPortfolio: function(){
+		projects.fetch({reset:true});
 		portfolioView.render();
 	},
 
