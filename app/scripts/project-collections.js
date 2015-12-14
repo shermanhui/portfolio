@@ -7,7 +7,7 @@ var app = app || {};
 
 app.projectDetails = Backbone.Model.extend({
 
-	urlRoot: '/profile.json',
+	urlRoot: 'https://raw.githubusercontent.com/shui91/portfolio/master/dist/profile.json',
 
 	initialize: function(attrs){
 		//console.log('model init');
@@ -34,7 +34,7 @@ app.projectCollection = Backbone.Collection.extend({
 
 	model: app.projectDetails,
 
-	url: '/profile.json',
+	url: 'https://raw.githubusercontent.com/shui91/portfolio/master/dist/profile.json',
 
 	initialize: function(){
 		//console.log('collection init');
