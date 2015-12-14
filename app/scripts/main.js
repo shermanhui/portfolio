@@ -1,8 +1,9 @@
-/* global $, _ */
+/* global $, _ , Backbone*/
 /*eslint no-undef: 0, no-unused-vars: 0*/
 
 'use strict';
 
+var app = app || {};
 $(document).ready(function() {
 
 	function adjustBodyOffset() {
@@ -34,3 +35,5 @@ var template = function(id){
 };
 
 //https://jsfiddle.net/4c2yespy/8/
+
+app.Bus = _.extend({}, Backbone.Events); // bus object instantiation, pass bus object to have reference to the data in each view
