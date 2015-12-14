@@ -68,12 +68,12 @@
     <script type="text/template" id="about-template">
       <div class="jumbotron" id="about-me">
         <div class="container">
-        <div class="col-md-8">
+        <div class="col-md-8 col-xs-12">
           <h1>Hello!</h1>
           <h4 class="lead">I am Sherman Hui, a Front-End Developer from Vancouver, Canada</h4>
           <p class="lead">I enjoy learning and creating; especially learning to create. I believe in always striving to become the best version of yourself. When I'm not coding, I'm on the mat practicing inversions or at the gym picking things up and putting them down. </p>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 col-xs-12 text-center">
           <img class="display-photo" src="http://i.imgur.com/bh6AwL0m.png" alt="sherman">
         </div>
         </div>
@@ -83,7 +83,7 @@
       <hr>
       <div class="row text-center" id="featured-work">
           <% _.each(collection, function(model){ %>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3">
           <div class="thumbnail">
             <div class="caption">
               <h3><a href= <%= model.url %>><%= model.caption %></a></h3>
