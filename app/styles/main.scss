@@ -128,6 +128,13 @@ i.fa {
   letter-spacing: 1px;
 }
 
+.modal-footer {
+  .btn-primary {
+    background-color: #333333;
+    border-color: #333333;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 768px){
   #hide-cage{
     display:none;
@@ -141,15 +148,31 @@ i.fa {
     display: none;
   }
 
-  .navbar-text.pull-right {
-    a {
+  .navbar-text {
+    &.pull-right a {
       font-size: 0.7em;
+    }
+
+    &.pull-left {
+      p.text-muted {
+        font-size: 0.7em;
+      }
     }
   }
 
-  .navbar-text.pull-left {
-    p.text-muted  {
-      font-size: 0.7em;
+  .modal-body {
+    img {
+      // width: 100%;
+    }
+    p {
+      font-size: 1em;
+    }
+  }
+
+  .modal-footer {
+    .btn-primary {
+      background-color: #333333;
+      border-color: #333333;
     }
   }
 
