@@ -15,8 +15,8 @@
 			"dates" : " ",
 			"url": "https://shui91.github.io/backbone-healthtracker-app",
 			"description" : "Using BackboneJS, the Nutritionix API, and Firebase I built a calorie tracker with persistent storage",
-			"image" : ["/assets/images/tracker.png", "/assets/images/pubcrawl.png"],
-			"technologies": ["/assets/images/backbone.png", "/assets/images/yeoman.jpg", "/assets/images/firebase.png"],
+			"image" : ["assets/images/tracker.png", "assets/images/pubcrawl.png"],
+			"technologies": ["assets/images/backbone.png", "assets/images/yeoman.jpg", "assets/images/firebase.png"],
 			"method": "In order to complete this project, I read through Addy Osmani's Backbone Fundamentals and experimented with the infamous todoMVC projects. I started the project small. I started by creating a simple list, and added a simple search functionality with hardcoded data. From there I learned how to retrieve API data using Backbone, and finally created a persistent list via Firebase",
 			"alt" : "Tracker Image"
 		},
@@ -26,8 +26,8 @@
 			"dates" : " ",
 			"url": "https://shui91.github.io/frontend-nanodegree-map-webapp",
 			"description" : "Using KnockoutJS, OOJS, build tools such as Gulp, and various Web APIs, I built a simple pub crawl SPA",
-			"image" : ["/assets/images/pubcrawl.png", "/assets/images/backbone.png"],
-			"technologies": ["/assets/images/knockout.png", "/assets/images/yeoman.jpg", "/assets/images/gulp.png"],
+			"image" : ["assets/images/pubcrawl.png", "assets/images/backbone.png"],
+			"technologies": ["assets/images/knockout.png", "assets/images/yeoman.jpg", "assets/images/gulp.png"],
 			"method": "Having no previous knowledge of MVVM concepts, I took a lot of time learning how to create the todoMVC project. After completing the todo list. I created a small sandbox project solely to learn about the GoogleMaps API. Once I understood how to use the API, I combined the todo-list logic with the map logic to create a small map that displayed a list of locations. Afterwards, I had to learn how to implement AJAX calls to retrieve data from third party APIs, as well as allow the user to communicate with the API via my application. Again, I took this task and built a smaller project to get the functionalities to work before implementing it into my project. Finally, I was able to get a dynamic list of locations to populate depending on the location the user input.",
 			"alt" : "Map Image"
 		},
@@ -38,7 +38,7 @@
 			"url": "https://shui91.github.io/project-asteroids",
 			"description" : "With a heavy focus on OOJS, I built a HTML5 clone of the classic arcade game, Asteroids",
 			"image" : ["http://i.imgur.com/2IF5sX2.png"],
-			"technologies": ["/assets/images/html5.png", "/assets/images/css3.png", "/assets/images/javascript.png"],
+			"technologies": ["assets/images/html5.png", "assets/images/css3.png", "assets/images/javascript.png"],
 			"method": "This project was ported over from a previous 'Intro to Computer Science' course on Coursera by Rice University. The code was originally in Python, porting it over to JavaScript was a great learning experience because I got more exposureto how JavaScript's Object Orientated nature, closures, inheritence and scope work in a game. One of the key things I learned is that even functions are objects in JS, and that blew my mind.",
 			"alt" : "Asteroids Image"
 		},
@@ -49,7 +49,7 @@
 			"url": "https://github.com/shui91/frontend-nanodegree-arcade-game",
 			"description" : "An introduction to Object Orientated Programming and the predecessor to my Asteroids Clone",
 			"image" : ["http://i.imgur.com/AByzuAT.png"],
-			"technologies": ["/assets/images/html5.png", "/assets/images/css3.png", "/assets/images/javascript.png"],
+			"technologies": ["assets/images/html5.png", "assets/images/css3.png", "assets/images/javascript.png"],
 			"method": "Object Orientated JavaScript was tough to get a hang of at first. A lot of review over closures, scopes, the keyword 'this' and prototypal inheritence was required before I even touched the keyboard. Once I understood the basic concepts. I built a game object class and extended that into Player, Enemy and Gem classes. I implemented simple collision, screen wrap around, and scoring logic to complete the basic functionalities. From there I used Udacity's game engine to produce the simple Frogger clone in the link above!",
 			"alt" : "Clone Image"
 		},
@@ -60,7 +60,7 @@
 			"url": "https://github.com/shui91/frontend-nanodegree-feedreader",
 			"description" : "My introductory project into learning how to use Jasmine and Test-Driven Programming",
 			"image" : ["http://i.imgur.com/eD42DHi.png"],
-			"technologies": ["/assets/images/jasmine.png", "/assets/images/javascript.png", "/assets/images/handlebars.png"],
+			"technologies": ["assets/images/jasmine.png", "assets/images/javascript.png", "assets/images/handlebars.png"],
 			"method": "I completed this project by reading through Jasmine's crystal clear documentation. Implementing tests for projects is crucial for preventing unexpected bugs and allow members of a team to smoothly implement features without conflict. I also learned how to use handlebars for templating.",
 			"alt" : "Feed Reader Image"
 		},
@@ -71,7 +71,7 @@
 			"url": "https://github.com/shui91/frontend-nanodegree-mobile-portfolio",
 			"description" : "Maximizing Web Performance and Optimizing Browser Rendering",
 			"image" : ["http://i.imgur.com/Y1uVVzL.png"],
-			"technologies": ["/assets/images/css3.png", "/assets/images/jquery.png", "/assets/images/grunt.png"],
+			"technologies": ["assets/images/css3.png", "assets/images/jquery.png", "assets/images/grunt.png"],
 			"method": "In this project, I learned about the browser's Critical Rendering Path, deferring or asynchronously loading CSS/JS scripts, how to use build processes such as Gulp/Grunt, and using more efficient Web APIs such as requestAnimationFrame and getElementByClassName vs querySelectorAll.",
 			"alt" : "Web Optimization Image"
 		},
@@ -82,7 +82,7 @@
 			"url": "https://shui91.github.io/portfolio",
 			"description" : "My first personal website built with BackboneJS",
 			"image" : ["http://i.imgur.com/mu1Yclz.png"],
-			"technologies": ["/assets/images/bootstrap.png", "/assets/images/backbone.png", "/assets/images/javascript.png"],
+			"technologies": ["assets/images/bootstrap.png", "assets/images/backbone.png", "assets/images/javascript.png"],
 			"method": "Using Backbone to build this project may have been overkill, but Backbone helped reduce a lot of work by automatically rendering each project item, have routing work out of the box, and separate my website's views.",
 			"alt" : "Portfolio Image"
 		},
@@ -93,7 +93,7 @@
 			"url": "https://shui91.github.io/portfolio#resume",
 			"description" : "A simple online resume page designed with purely HTML5, CSS3 and jQuery",
 			"image" : ["http://i.imgur.com/bV8dxT3.png"],
-			"technologies": ["/assets/images/bootstrap.png", "/assets/images/jquery.png", "/assets/images/javascript.png"],
+			"technologies": ["assets/images/bootstrap.png", "assets/images/jquery.png", "assets/images/javascript.png"],
 			"method": "In this project I learned how to write JSON Objects and use jQuery to automatically populate my resume's content. It was a simple project that encouraged me to read through jQuery's documentation and use various JavaScript plugins to achieve the look I wanted. Bootstrap was implemented to achieve a fully responsive look and feel.",
 			"alt" : "Resume Image"
 		},
@@ -104,7 +104,7 @@
 			"url": "",
 			"description" : "Excited to be learning how to use React!",
 			"image" : ["http://i.imgur.com/bV8dxT3.png"],
-			"technologies": ["/assets/images/reactjs.png", "/assets/images/yeoman.jpg", "/assets/images/javascript.png"],
+			"technologies": ["assets/images/reactjs.png", "assets/images/yeoman.jpg", "assets/images/javascript.png"],
 			"method": "I am currently learning how to use React and my next project will be uploaded soon! I also plan to use ES6 syntax in this project as well",
 			"alt" : "ReactJS Image"
 		}
