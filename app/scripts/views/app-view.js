@@ -5,8 +5,6 @@
 
 var app = app || {};
 
-app.Bus = _.extend({}, Backbone.Events); // bus object instantiation, pass bus object to have reference to the data in each view
-
 app.appView = Backbone.View.extend({
 	el: '.portfolio-body',
 
