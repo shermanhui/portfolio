@@ -7,7 +7,7 @@ $fa-font-path:   '../fonts/';
 // endbower
 
 html, body {
-  height: 100%
+  height: 100%;
 }
 
 body {
@@ -45,11 +45,6 @@ p {
 .display-photo{
   border-radius: 50%;
 }
-
-// .tech-images.tech-images{
-//   max-width: 50%;
-//   max-height: 50%;
-// }
 
 .navbar-brand,
 .navbar-nav li a {
@@ -111,11 +106,6 @@ i.fa {
   background: none;
 }
 
-.contactbg {
-  margin-bottom: 20%;
-}
-
-
 #really-small {
   font-size: 0.7em;
 }
@@ -138,36 +128,31 @@ i.fa {
   letter-spacing: 1px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (min-width: 320px) and (max-width: 768px){
+  #hide-cage{
+    display:none;
+  }
+
   .resume-photo#hideDP {
     display: none;
   }
+
   .display-photo {
     display: none;
   }
-}
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+  .navbar-text.pull-right {
+    a {
+      font-size: 0.7em;
+    }
+  }
 
-  // .container {
-  //   max-width: 730px;
-  // }
+  .navbar-text.pull-left {
+    p.text-muted  {
+      font-size: 0.7em;
+    }
+  }
 
-  /* Remove the padding we set earlier */
-  // .header,
-  // .marketing,
-  // .footer {
-  //   padding-left: 0;
-  //   padding-right: 0;
-  // }
-
-  /* Space out the masthead */
-  // .header {
-  //   margin-bottom: 30px;
-  // }
-
-  /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
